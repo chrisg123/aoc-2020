@@ -32,5 +32,13 @@ print_result "$(./app)"
 make clean > /dev/null
 popd > /dev/null
 
+printf '\n%s\n' '[Day 3]'
+print_part '1' 'rust'
+pushd d3/p1 > /dev/null
+make > /dev/null
+print_result "$(./app)"
+make clean > /dev/null
+popd > /dev/null
+
 printf '\n'
 
