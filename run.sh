@@ -40,5 +40,12 @@ print_result "$(./app)"
 make clean > /dev/null
 popd > /dev/null
 
+print_part '2' 'rust'
+pushd d3/p2 > /dev/null
+make > /dev/null
+print_result "$(./app)"
+make clean > /dev/null
+popd > /dev/null
+
 printf '\n'
 
